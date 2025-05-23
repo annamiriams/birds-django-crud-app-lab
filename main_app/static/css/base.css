@@ -1,0 +1,15 @@
+/* CTRL+SHIFT+R TO HARD RESET BECAUSE OF CACHING ISSUE */
+
+body {
+    background: slategrey;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+a:link,
+a:visited {
+    color: darkblue;
+    text-decoration: none;
+}
