@@ -4,8 +4,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home(request):
-    # The HttpResponse object we used is the simplest way to return content in Django. As we progress, we will explore more sophisticated methods such as rendering templates which allow for more dynamic and interactive web pages.
-    return HttpResponse('<h1>BirdBase</h1>')
-
+    return render(request, 'home.html')
+    
 def about(request):
-    return HttpResponse('<h1>About</h1>')
+    return render(request, 'about.html')
