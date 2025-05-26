@@ -22,8 +22,9 @@
         </div>
         <nav>
             <ul>
-                <li><a href={% url 'bird-index' %}>All Birds</a></li>
-                <li><a href={% url 'about' %}>About</a></li>
+                <li><a href="{% url 'bird-index' %}">All Birds</a></li>
+                <li><a href="{% url 'bird-create' %}">Add a Bird</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
             </ul>
         </nav>
     </header>

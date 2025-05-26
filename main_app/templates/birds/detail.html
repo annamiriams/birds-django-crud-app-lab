@@ -6,12 +6,17 @@
 {% block content %}
 <section class='bird-container'>
     <div class='bird-img'>
-        <img src="{% static 'images/gull-bird-flying-shape.png' %}" alt="A black icon of a flying gull made created by park Freepik - Flaticon.">
+        <img src="{% static 'images/gull-bird-flying-shape.png' %}"
+            alt="A black icon of a flying gull made created by park Freepik - Flaticon.">
     </div>
     <div class='bird-details'>
         <h1>{{ bird.name }}</h1>
         <p><i>Family: {{ bird.family }}</i></p>
         <p>{{ bird.description }}</p>
-    </div>
+
+        <div class='bird-details'>
+            <a href="{% url 'bird-update' bird.id %}" class='btn warn'>Edit</a>
+            <a href="{% url 'bird-delete' bird.id %}" class='btn danger'>Delete</a>
+        </div>
 </section>
 {% endblock %}
