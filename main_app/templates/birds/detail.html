@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/birds/bird-detail.css' %}">
+{% endblock %}
+{% block content %}
+<section class='bird-container'>
+    <div class='bird-img'>
+        <img src="{% static 'images/gull-bird-flying-shape.png' %}" alt="A black icon of a flying gull made created by park Freepik - Flaticon.">
+    </div>
+    <div class='bird-details'>
+        <h1>{{ bird.name }}</h1>
+        <p><i>Family: {{ bird.family }}</i></p>
+        <p>{{ bird.description }}</p>
+    </div>
+</section>
+{% endblock %}

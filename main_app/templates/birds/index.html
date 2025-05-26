@@ -9,15 +9,14 @@
 <section class='card-container'>
     {% for bird in birds %}
     <div class='card'>
-        {% comment %} add a tag here to link to bird-detail {% endcomment %}
-        <a href='*'>
+        {% comment %} dynamically link to bird-detail (no hardcoding URL like: <a href="/cats/{{cat.id}}">) {% endcomment %}
+        <a href="{% url 'bird-detail' bird.id %}">
             <div class="card-content">
                 <div class="card-img-container">
-                    <img src='{% static 'images/gull-bird-flying-shape.png' %}' alt='Bird icon created by park Freepik - Flaticon.' />
+                    <img src='{% static 'images/gull-bird-flying-shape.png' %}' alt='A black icon of a flying gull made created by park Freepik - Flaticon.' />
                 </div>
                 <h2 class='card-title'>{{ bird.name }}</h2>
                 <p><i>Family: {{ bird.family }}</i></p>
-                <p>{{ bird.description }}</p>
             </div>
         </a>
     </div>

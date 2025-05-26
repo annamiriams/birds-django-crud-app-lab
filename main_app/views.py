@@ -12,3 +12,7 @@ def about(request):
 def bird_index(request):
     birds = Bird.objects.all()
     return render(request, 'birds/index.html', {'birds': birds})
+
+def bird_detail(request, bird_id):
+    bird = Bird.objects.get(id=bird_id)
+    return render(request, 'birds/detail.html', {'bird': bird})
