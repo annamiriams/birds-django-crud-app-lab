@@ -14,10 +14,10 @@
         <h1>{{ bird.name }}</h1>
         <p><i>Family: {{ bird.family }}</i></p>
         <p>{{ bird.description }}</p>
-
+        <br>
         <div class='bird-details'>
-            <a href="{% url 'bird-update' bird.id %}" class='btn warn'>Edit</a>
-            <a href="{% url 'bird-delete' bird.id %}" class='btn danger'>Delete</a>
+            <a href="{% url 'bird-update' bird.id %}" class='btn'>Edit</a>
+            <a href="{% url 'bird-delete' bird.id %}" class='btn'>Delete</a>
         </div>
 </section>
 
