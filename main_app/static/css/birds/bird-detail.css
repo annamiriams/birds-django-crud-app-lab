@@ -29,12 +29,13 @@ img {
     margin-top: 20px;
 }
 
-/* .feedings-toy-container {
+.meal-container {
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
     align-items: center;
 }
+
 
 .subsection-title {
     display: flex;
@@ -45,7 +46,7 @@ img {
 .subsection-content {
     margin: 0 8px;
 }
-
+/* 
 .toy-container {
     display: flex;
     align-items: center;
@@ -99,7 +100,7 @@ img {
     margin: 5px 0;
 }
 
-/* .feedings-toy-container>section {
+.meal-container>section {
     width: 80%;
     min-width: 360px;
     border: var(--borders);
@@ -121,13 +122,13 @@ img {
     margin-left: 16px;
 }
 
-.feedings h2,
+.meals h2,
 .toys h2 {
     font-size: 3.2rem;
     margin: 0;
 }
 
-.feedings h3,
+.meals h3,
 .toys h3 {
     font-size: var(--font-xl);
     margin: 10px 0;
@@ -145,28 +146,28 @@ img {
     padding: 3px;
 }
 
-.feedings table {
+.meals table {
     width: calc(100% - 16px);
     text-align: left;
     border-collapse: collapse;
     margin: 0 8px;
 }
 
-.feedings td {
+.meals td {
     padding: 8px 5px;
     font-size: var(--font-reg);
 }
 
-.feedings th {
+.meals th {
     font-size: var(--font-l);
     padding: 5px 5px 0;
     border-bottom: rgb(36, 116, 248) solid 2px;
 }
 
-.feedings tr:nth-child(even) {
+.meals tr:nth-child(even) {
     background-color: #f3f3fd;
 }
-
+/* 
 .toy-container p {
     margin: 12px 0;
 }
